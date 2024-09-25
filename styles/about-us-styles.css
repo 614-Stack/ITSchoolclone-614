@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+
+head,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Asap, sans-serif;
+}
+
+.header {
+  background-color: var(--transparent);
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+}
+
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header-container .navigation ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header .header-container .navigation ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 800;
+  transition: all 0.3s ease-in;
+}
+
+.header .header-container .navigation ul li:hover a {
+  color: var(--normal-orange);
+}
+
+.max-space-available {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-main-content .about-us-intro-section {
+  height: 520px;
+  background: url(https://www.itschool.ro/_next/static/media/background.008d1f37.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-main-content .about-us-intro-section-title {
+  margin: 0px;
+  width: 100%;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 96px 0px;
+}
+
+.about-us-main-content
+  .about-us-intro-section-title
+  .about-us-intro-section-title-text {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
+
+.about-us-main-content .about-us-section {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  padding: 96px 0px;
+}
+
+.about-us-main-content .about-us-small-text {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+
+  color: rgba(25, 30, 48, 0.4);
+}
+
+.about-us-main-content .about-us-content-title {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+}
+
+.about-us-main-content .about-us-content-text {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+
+  color: rgb(25, 30, 48);
+}
+
+.about-us-main-content .about-us-section .about-us-grid-1 {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "about-text . about-image"
+    "results-image . about-image"
+    "results-image . results-text";
+}
+
+.about-us-main-content .about-us-section .about-us-text-card-1 {
+  grid-area: about-text;
+  max-width: 580px;
+  margin-right: auto;
+}
+
+.about-us-main-content .about-us-section .pic-card-1 {
+  width: 480px;
+  height: 480px;
+}
+
+.about-us-main-content .about-us-section .about-us-pic-card-1 {
+  grid-area: about-image;
+  align-self: end;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.about-us-main-content .about-us-section .pic-card-2 {
+  width: 580px;
+  height: 580px;
+}
+
+.about-us-main-content .about-us-section .about-us-pic-card-2 {
+  grid-area: results-image;
+  max-width: 580px;
+  margin-right: auto;
+}
+
+.about-us-main-content .about-us-section .about-us-text-card-2 {
+  grid-area: results-text;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.about-us-main-content .about-us-trainer-section {
+  background-image: url(https://www.itschool.ro/_next/static/media/background.f010c851.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  padding: 96px 0px;
+}
+
+.about-us-main-content .about-us-trainer-section .trainer-photos {
+  width: 1200px;
+  height: 294px;
+}
+
+.about-us-main-content .about-us-trainer-section .about-us-trainers-text-box {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.about-us-main-content
+  .about-us-trainer-section
+  .about-us-trainers-text-box
+  .trainer-content-text {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  width: 600px;
+}
+
+.about-us-main-content
+  .about-us-trainer-section
+  .about-us-trainers-text-box
+  .trainer-content-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  width: 600px;
+  height: 87px;
+}
+
+.about-us-main-content .about-us-trainer-section .trainer-photo-box {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 96px 0px 48px;
+}
+
+.about-us-main-content
+  .about-us-trainer-section
+  .trainer-content-button-transparent {
+  margin: 20px 0 0 0;
+  cursor: pointer;
+  width: fit-content;
+  padding: 0px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.4rem;
+  min-width: 11.4rem;
+  transition: 0.25s ease-in;
+  border: 1px solid rgb(0, 135, 104);
+  color: rgb(0, 135, 104);
+  background-color: rgba(202, 205, 193, 0.1);
+}
+
+.about-us-main-content .about-us-trainer-section .trainer-content-button-text {
+  display: block;
+  text-decoration: none;
+  margin: 0px;
+  transition: 0.25s ease-in;
+  padding: 8px 0px;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgb(0, 135, 104);
+}
+
+.about-us-main-content
+  .about-us-trainer-section
+  .trainer-content-button-text-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-us-main-content .about-us-trainer-section .about-us-content-box-2-card {
+  padding-top: 48px;
+  border-top: 1px solid rgba(25, 30, 48, 0.1);
+}
+
+.about-us-main-content .about-us-trainer-section .about-us-trainers-box-2 {
+  margin: auto;
+  max-width: 580px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us-main-content .about-us-trainer-section .trainer-content-button-solid {
+  cursor: pointer;
+  width: fit-content;
+  padding: 0px 48px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 24px;
+  min-width: 110px;
+  color: white;
+  background-color: rgb(0, 135, 104);
+  transition: 0.25s ease-in;
+}
+
+.about-us-main-content .about-us-locations-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 96px 0px 48px;
+}
+
+.about-us-main-content .about-us-locations-section .pic1 {
+  grid-area: one;
+  width: 385px;
+  height: 385px;
+}
+.about-us-main-content .about-us-locations-section .pic2 {
+  grid-area: two;
+  width: 376px;
+  height: 385px;
+}
+.about-us-main-content .about-us-locations-section .pic3 {
+  grid-area: three;
+  width: 371px;
+  height: 804px;
+}
+.about-us-main-content .about-us-locations-section .pic4 {
+  grid-area: four;
+  width: 808px;
+  height: 399px;
+}
+
+.about-us-main-content .about-us-locations-section .romania-card {
+  grid-area: map;
+  display: flex;
+  margin-bottom: 4.8rem;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.about-us-main-content .about-us-locations-section .locations-grid {
+  display: grid;
+  gap: 2px;
+  grid-template-areas:
+    "locations locations locations map map map"
+    "one one two two three three"
+    "four four four four three three";
+}
+
+.about-us-main-content .about-us-locations-section .locations-text-card {
+  grid-area: locations;
+  max-width: 580px;
+}
+
+.footer .content {
+  padding: 50px 20px;
+}
+
+.footer .links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer .links .links-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.footer .links .links-column a {
+  margin-bottom: 8px;
+  color: var(--dark-blue);
+}
+
+.footer .terms-links a:hover,
+.footer .links .links-column a:hover {
+  color: var(--normal-green);
+}
+
+.footer .links .logo-and-stuff {
+  padding-right: 50px;
+}
+
+.footer .links .logo-and-stuff img {
+  width: 108px;
+}
+
+.footer .links .logo-and-stuff .socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer .links .logo-and-stuff .socials svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .links .logo-and-stuff .socials svg path {
+  fill: var(--black);
+  transition: all 0.3s ease-in;
+}
+
+.footer .links .logo-and-stuff .socials svg:hover path {
+  fill: var(--hover-blue);
+}
+
+.footer .terms-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.footer .terms-links .copyright,
+.footer .terms-links a {
+  color: var(--transparent-gray);
+}
+
+.footer .terms-links a:first-of-type {
+  margin-left: auto;
+}
